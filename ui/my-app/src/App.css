@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: cornsilk;
 }
 
 .App-logo {
@@ -36,3 +37,12 @@
     transform: rotate(360deg);
   }
 }
+
+h3{
+  color: #ed0c2e;
+  border: #282c34;
+  font-size: 35px;
+  
+
+}  
+

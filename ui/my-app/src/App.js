@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import {Home} from './Home';
-import {Department} from './Department';
-import {Employee} from './Employee';
+import {Course} from './Course';
+import {Student} from './Student';
 import {BrowserRouter, Route, Switch,NavLink} from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App container">
-      <h3 className="d-flex justify-content-center m-3">
-        React JS Frontend
+      <h3 className="d-flex justify-content-center m-3" >
+        Student Record Management System
       </h3>
         
       <nav className="navbar navbar-expand-sm bg-light navbar-dark">
@@ -21,13 +21,13 @@ function App() {
             </NavLink>
           </li>
           <li className="nav-item- m-1">
-            <NavLink className="btn btn-light btn-outline-primary" to="/department">
-              Department
+            <NavLink className="btn btn-light btn-outline-primary" to="/course">
+              Course
             </NavLink>
           </li>
           <li className="nav-item- m-1">
-            <NavLink className="btn btn-light btn-outline-primary" to="/employee">
-              Employee
+            <NavLink className="btn btn-light btn-outline-primary" to="/student">
+              Student
             </NavLink>
           </li>
         </ul>
@@ -35,8 +35,8 @@ function App() {
 
       <Switch>
         <Route path='/home' component={Home}/>
-        <Route path='/department' component={Department}/>
-        <Route path='/employee' component={Employee}/>
+        <Route path='/course' component={Course}/>
+        <Route path='/student' component={Student}/>
       </Switch>
     </div>
     </BrowserRouter>
